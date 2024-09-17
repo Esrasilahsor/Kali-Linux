@@ -1,0 +1,42 @@
+			22 Vi Metin Editörü
+
+
+Vi içerisinde işlam yapabilmek için klavyeden i  tuşuna basıp İnsert moda geçmek gerekir.  
+
+Daha önceden yapılmış bir dosyayı açabilir. 
+
+Eğer : text editörünün içerisine konuluyorsa şu anda edit moddayız demektir. 
+
+: Dışarı konuluyorsa Vi moddayız demektir. 
+
+Tuş kombinasyonu yoktur. Komutlarla işlem yapılır. 
+
+" : w! " komutuyla dosyadan yaptığımız değişiklikler kaydedilir. 
+
+" : wq! " komutuyla dosyadan yaptığımız değişiklikler kaydedilip çıkılır. " x! " komutu da aynı işlevi görür. 
+
+" : q! " komutuyla dosyadan yaptığımız değişiklikler kaydedilmeden çıkılır.
+
+vi veya insert modda "delete" tuşuyla silebiliriz. Bir satırı silmek için "dd" tuşuna basmamız gerekir. Insert modda bunu yapmak için "esc" tuşuna bastıktan hemen sonra hızlıca "dd" tuşuna basmak gerekir. 
+
+
+	Kopyalama, Kesme ve Yapıştırma:
+
+Bu işlemleri yapmak için Visual moda geçmek gerekir. Visual moda "v" tuşuna basarak geçeriz.
+
+KOPYALAMA işlemi yapmak için istenilen metin seçildikten sonra "y" tuşuna basılır. Visual moddan esc tuşuyla çıktıktan sonra "p" kuşuna basıp YAPIŞTIRMA işlemi yapılabilir.  
+
+* Insert modda yapıştırma işlemi yapılamaz. 
+
+KESME yapmak için "d" tuşuna basıp Visual moddan esc tuşuyla çıktıktan sonra "p" kuşuna basıp YAPIŞTIRMA işlemi yapılabilir. 
+
+İnsert modda yukarı, aşağı tuşları ile hareket edilir.  
+
+
+	Vi İçerisinde Arama Yapma:
+
+"/aratmakİstediğimizKelime" komutuyla arama işlemi yapılır. 
+
+" :set number" komutuyla satırlar numarlanır. Aradığımız kelimenin hangi satırda olduğunu biliyorsak arama işlemi yapabiliriz.
+
+":100+10" veya ":110" yazarsak 110. satıra gider.

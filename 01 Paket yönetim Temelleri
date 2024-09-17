@@ -1,0 +1,35 @@
+			01 Paket Yönetim Temelleri
+
+
+Paket kurmaya program kurmak da denebilir.
+
+Paket kurma işlemi Terminal aracılığıyla yapılır;
+
+1- Hazır paketlerle kurulum:
+
+Hızlı bir yöntemdir. 
+Sisteme tam optimize edilmez.
+Bir repoda tutulurlar. 
+apt Debian tabanlı işletim sistemlerine özgü bir programdır.
+
+2- Açık kodu olan uygulamayı derleyerek kurulum:
+
+Sisteme tam optimize edilerek kurulur. 
+
+** bir komutun nasıl kullanıldığını öğrenmek istersek terminalde önüne "man " yazarak kullanırız.
+
+** "whoami" komutuyla kim olduğumuzu öğrenebiliriz. 
+
+** terminalde $ işareti varsa standart kullanıcıdır. Sadece küçük çağlı kulLanıcı işlemlerini yapmak için kullanılır.
+
+** Root kullanıcı yönetici haklarına sahip, kabuktaki (shell) en yetkili kullanıcı modelidir.
+
+
+
+Apt paket kurarken "sudo apt" dediğimize bu komut yönetici haklarıyla çalışır. Böyle kullanmamız gerekir. 
+
+Paketi otomatik olarak kurmak için "apt install paketinadı" komutu kullanılır. 
+
+"update" komutu da yönetici haklarıyla çalışır. Var olan güncellemelerin olup olmadığını gösterir.
+
+** ctrl+c ile çalışan bir komut durdurulabilir. 

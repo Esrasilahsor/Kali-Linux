@@ -1,0 +1,43 @@
+			12 Süreç Yönetimi ve Dizinler Arası Gezinmek
+
+
+"ps" komutu ile çalışan süreçler gösterilir. 
+
+"ps aux" komutu ile çalışan bütün süreçleri, çalışan sürecin kime ait olduğunu, kim tarafından yürütüldüğü gibi bilgileri gösterir.
+
+"ps axjf" komutyla kim hangi sürecin altında çalıştığını görürüz. 
+
+"pstree" komutu süreç ağaçlarını gösterir.
+
+"top" komutu CPU'yu en çok kullanan uygulamaları gösterir. q ya basınca çıkar. 
+
+"htop" komutu ile CPU kullanımı ile ilgili grafikler ve daha ayrıntılı bilgi verir.
+
+"free" komutuyla memory hakkında bilgi alabiliriz. Boyutunu, kullanılan alanı, boş alanı gösterir.
+
+"uptime" makinenin çalışma süresi, ne zaman açıldığı gibi bilgileri gösterir.
+
+
+	Dizin Yapısı:
+
+Ana dizin yapısı / işaretidir.
+
+Genelde ana dizinler home dizini altında bulunur.
+
+"cd" komutu dizinler arası geçiş için kulllanılan komuttur. Bir klasöre gitmek istiyorsak yolunu yazmalıyız.
+
+"pwd" komutu hangi dizinde olduğumuzu gösterir.
+
+"cd /klasöradı" komutuyla klasör içine gidilir. 
+
+ Bir dizin altındaki klasör aramak için "klasöradı/" komutu kullanılır.
+
+ Dizinlerden geri gelmek için de "cd .." komutu kullanılır. 
+
+ "ll" komutu dizinlerin içerisindekileri listelemek için kullanılır.
+
+ "ls -al" komutuyla gizli klasöerler listelenir.
+
+ Bir klasörü aramak için "find / -name uygulamaadı" komutu kullanılır. Lokaysonu bilinmeyen uygulamalar için kullanılır. 
+
+ Hangi dizinde olduğunu biliyorsak " find /dizinadı -name klasöradı" komutu kullanılır. 

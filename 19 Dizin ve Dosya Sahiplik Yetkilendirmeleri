@@ -1,0 +1,17 @@
+			19 Dizin ve Dosya Sahiplik Yetkilendirmeleri
+
+
+"chown yeniKullanıcıİsmi dosyaAdı" komutuyla hem grup hem kullanıcı sahibi değiştirilebilir. Sudo yetkileri ile çalışır. 
+
+"chgrp yeniKullanıcıİsmi dosyaAdı" komutuyla dosyanın grubu değiştirilebilir. 
+
+Kullanıcı ile beraber grubu da değiştirmek için "sudo chown kullanıcıAdı:grupAdı dosyaAdı" komutuyla yapılır. Dizinler için de aynı şekilde çalışır. 
+
+Aynı yöntem grup için de yapılabilir. "chgrp -R grupAdı dizinAdı" komutu kullanılır. 
+
+
+Birden fazla dizinin dosya sahibini değiştirmek için "chown -R kullanıcıAdı dizin* " komutu kullanılır. Dizin1, dizin2 ve dizin3 gibi dizinlerin sahibini aynı anda  değiştirir. 
+
+Grup için de aynısı yapılır. "chgrp -R grupAdı dizin* " komutu kullanılır. "dizin* " ifadesi dizin kelimesini içeren her şeyi kapsa demektir. 
+
+

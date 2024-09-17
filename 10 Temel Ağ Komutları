@@ -1,0 +1,26 @@
+			10 Temel Ağ Komutları
+
+
+"systemctl status networking" komutuyla çalışır.
+
+Ağda sorun hissedersek ağ kartını yeniden başlatman için "systemctl resart networking" komutunu kullanabiliriz.
+
+"ip addr" komutu IP ile ilgili bilgileri gösterir. 
+
+"ip addr show" komutu IP ile ilgili detaylı bilgi gösterir. 
+
+"ip link set eth0 down" networkü kapatır.
+
+"ip link set eth0 up" networkü açar.
+
+"ethtoll -i eth0" komutu kullandığımız interface hakkında bilgi verir.
+
+networ kartındaki aktivitelere ve statik analize erişmek istersek "ethtoll -S eth0" komutunu kullanabiliriz. 
+
+
+	DNS Ayarları:
+
+
+"/etc/resolv.conf" komutuyla dns ayarlarına gidebiliriz.
+
+"vi /etc/resolv.conf" komutu dns adresi değiştirmeye yarar.

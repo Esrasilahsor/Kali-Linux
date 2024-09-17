@@ -1,0 +1,17 @@
+			23 Python ve Perl Dosyası Çalıştırma
+
+
+	Python Çalıştırma: 
+
+"vi pythonDosyasıAdı.py" komutu ile dosya açılır. Insert moda geçtikten sonra en üste " #!/bin/python3 " komutu yazılır. "x!" komutu ile kaydedip çıkılır. 
+
+"python3 pythonDosyasıAdı.py" komutuyla dosyayı açabiliriz. 
+
+
+	Perl Çalıştırma:
+
+Perl dosyaları sonunda .pl uzantısı ile ifade edilir. 
+
+"vi perlDosyasıAdı.py" komutu ile dosya açılır. Insert moda geçtikten sonra en üste " #!/usr/bin/perl " komutu yazılır. "x!" komutu ile kaydedip çıkılır.
+
+* Bir programı derlerken "gcc programKaynağı.uzantısı -o Adı " komutu kullanılır. 

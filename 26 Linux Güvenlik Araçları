@@ -1,0 +1,49 @@
+			26 Linux Güvenlik Araçları
+
+
+	Nmap:
+
+IP adresi bilinen portları tarar. 
+
+"nmap 198.168.1.1 " komutu ile Ip adresine ait açık portları tarar ve bize bir çıktı olarak sunar.
+
+"nmap -v -p 10-30 scanme.nmap.org" gibi bir komutla belirli bir aralık taranabilir. 
+
+"nmap -v -p 22 scanme.nmap.org" komuutyla sadece belirtilen port taranabilir. 
+
+TCP ve UDP taramaları yapabiliriz. "nmap -sS hedefIP veya hedefHost" TCP portlarını tarar. "nmap -sU hedefIP veya hedefHost" UDP portlarını tarar. 
+
+
+	Burp Suite: 
+
+En önemli özellikleri Proxy ve Repeater'dır. Web uygulama güvenliğini test etmek için kullanılan bir platformdur.
+
+Bu araç, web uygulamalarındaki olası güvenlik açıklarını tespit etmek, analiz etmek ve gidermek için kullanılır.
+
+
+	Nikto:
+
+Nikto üzerinde arama yapmak için " nikto -h hedefUrl.com" komutu kullanılır. Bu komut bize detaylı bilgiler verilir. 
+
+" nikto -h hedefUrl.com -o /home/kullanıcı/Desktop/dosyaadı.txt -Format txt " komutu zaafiyetleri txt formatına getirir. 
+
+Zaafiyet tararken proxy verilebilir. Port taraması yapabilir. 
+
+" nikto -h hedefUrl.com -Tunning 1 " komutuyla zaafiyet taraması yapılır. 
+1-low  2-medium 3-high seviyesindeki zaafiyetleri, güvenlik açıklarını gösterir.
+
+
+	WireShark:
+
+Wireshark, ağ trafiğini analiz etmek için kullanılan ücretsiz ve açık kaynak kodlu bir yazılımdır. 
+
+Bu araç, ağ üzerindeki veri paketlerini yakalayarak, bu paketlerin içeriğini detaylı bir şekilde incelemenizi sağlar. 
+
+Wireshark, ağ yöneticileri, güvenlik uzmanları ve sistem analistleri tarafından ağ sorunlarını tespit etmek, güvenlik incelemeleri yapmak ve ağ performansını değerlendirmek için yaygın olarak kullanılır.
+
+
+	Sqlmap:
+
+Güvenlik açıklarını sömürmeye yarar. Çok kapsamlı bir tooldur. 
+
+Genelde root ile kullanılır.  

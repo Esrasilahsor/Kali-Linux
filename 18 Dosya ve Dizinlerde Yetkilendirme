@@ -1,0 +1,40 @@
+			18 Dosya ve Dizinlerde Yetkilendirme
+
+
+			Dizinlerde Yetkilendirme: 
+
+
+"chmod 000 dizinismi" ile dizin yetkileri sıfırlanabilir. Kullaıcının hiçbir yetkisi kalmaz. 
+
+"chmod 777 dosyaismi" ile dizin sahibine tüm yetkiler verilebilir. 
+
+Vermek istediğimiz yetkileri "chmod yetkinumaraları dizinismi" komutuyla verebiliriz. 
+
+Yetki vermeyi "chmod ugo+rwx dizinismi" şeklinde de yapabiliriz. 
+
+u = user (dosya sahibi)
+
+g = group (dosya sahiplik grubu)
+
+o = other (Linuxteki diğer kullanıcılar)
+
+w = yazma
+
+r = okuma
+
+x = çalıştırma
+
+Sadece kullanıcıya yetki vereceksek "chmod u+rwx dizinismi" komutu kulllanılabilir. 
+
+Dizinlere herhangi bir yetki vermek için o dizinin içinde olmamıza gerek yok ama değilsek dizin yolunu yazmamız gerekir. 
+
+Örneğin "chmod ugo+rwx /home/hacker/Desktop/dizin1" komutuyla da uzaktan yetkilendirme yapılabilir. 
+
+Yetkileri almak için "chmod ugo-rwx" komutu kullanılabilir. Sudo ile çalıştırılır. 
+
+
+	Dosyalarda Yetkilendirme: 
+
+"chmod -R ugo+rwx dizinismi" komutuyla dizinşn içindeki  bütün alt klasörleri kapsayacak yetki verebiliriz.
+
+ "chmod -R 751 dosyaismi" ile de yetkilendirme yapılabilir.

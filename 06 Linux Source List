@@ -1,0 +1,18 @@
+			06 Linux Source List
+
+
+Linux'te source kodlar etc/apt klasöründe bulunur.
+
+"cd /etc/apt/" komutuyla dosyanın içine girilir. "ls -al" komutuyla klasördekiler listelenir. Listenin içindeki sources.list. klasörü "more source.list" komutuyla okunur.
+
+	Paket Yükleme: 
+
+Paket yüklemek için önce tarayıcıdan paket kodları indirilir. Sonra "cd Downloads/" komutuyla indirilenler klasörünün içine girilir. 
+
+"ls -al" komutuyla klasörün içi görüntülenir ve ilgili paketin tam adı öğrenilir.
+
+"dpkg -i paketadı" komutuyla paket yüklenir.
+
+** "touch paketadı.list " komutuyla yeni bir repo oluşturulabilir. 
+
+** repo ile ilgili sorun yaşarsak ilk bakmamız gereken yerdir.

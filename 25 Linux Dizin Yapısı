@@ -1,0 +1,129 @@
+			25 Linux Dizin Yapısı
+
+
+	1- Kök Dizini: 
+
+Bütün dizinleri içeren ana dizindir. 
+
+
+	2- Bin Dizini: 
+
+Bütün temel komutlar bu dizinde yer alır. Herhangi bir uygulamayla alakalı çalıştırılan komutlar bu dizin altında yer alır.
+
+Eğer bir komut ile ilgili sorun yaşanırsa bu dizinden kontrol edilebilir. 
+
+* Başında "l" olan komutlar sembolik bir link ile bağlıdır. 
+
+
+	Boot Dizini:
+
+İşletim sisteminin açılması için gerekli bütün dosyalar, çekirdekler ve bütün çalışması için gerekli olan kalıplar bu dizin içinde yer alır. 
+
+Açılma ile ilgili sorunlarda bu dizine bakmak gerekir. 
+
+
+	Dev Dizini: 
+
+En önemlidizinlerden bir tanesidir. Bu dizin özel veya aygıt dosyalarının konumudur. Linux'de her şey bi dosyadır. Bütün hardware verilerimiz ve bütün donanımsal bilgiler bu dizin altında yer alır.  
+
+Kullanıcı sahipilik yetkileri de farklıdır. 
+
+
+	Etc Dizini: 
+
+En önemli dizindir. Sistemin önemli yapılandırma dosyaları burada bulunur. Buradaki dosyalar olmadan sistem düzgün çalışmaz o nedenle etc içerisindeki dosyalar sistemin kalbi de denilebilir. 
+
+Her zaman etc'deki dosyalar yedeklemede önceliklidir. 
+
+Etc dizini önemli olduğu kadar onu korumak da önemlidir çünkü bu dizin altında aklınıza gelebilecek her şey yer alır.
+
+Kullanıcı şifrelerinin olduğu bilgiler /etc/shadow klasöründe tutulur. 
+
+Uygulamada çıkan sorunlarda bakmamız gereken ilk yer etc altındaki o uygulamaya ait dosyalardır. 
+
+
+	Home Dizini:
+
+Linux'te standart olarak kullanıcı dizinleri home dizini altında yer alır. 
+
+Bir kullanıcı açılırken otomatik olarak oluşturulan bilgiler etc altında tutulur. Home dizinine de kopyalanır.
+
+* Dosyanın başında . varsa gizli dosya demektir.
+
+Kullanıcıların kendi işlemlerini yaoabilmesi için oluşturulan dizinlerdendir. 
+
+
+	Lib Dizini: 
+
+Bu dizin çekirdek modülleri ve sistem hütüphanelerini içerir. 
+
+Çekirdek modüllerisistemin açılışı için gerekli olup bazı donanımların sistem tarafından tanınmasını sağlıyor.
+
+Sistem kütüphaneleri ise bin ve sbin altındaki çalışması için gerekli c kütüphaneleridir. 
+
+Kütüphane dosyalarının uzantısı genelde ".so " olur. 
+
+Bir çok uygulamaya ait kütüphaneler buradadır. 
+
+
+	Lost and Found Dizini: 
+
+Doğru bir şekilde kapanmayan, aniden kapanan sistemin bir sonraki açılışında işletim sistemi dosya kontrolü yapar. Bozulmuş veya kaybolmuş herhangi bir şety varsa bu dizin altına konur. 
+
+Eğer dosyalar düzgünse olması gereken dizine geri taşır. 
+
+
+	Mnt Media Opt ve Proc Dizinleri:
+
+Sökülüp takılabilir dosya sistemleri Media Dizinine bağlanır. 
+
+Opt, işletim sisteminin ön tanımlı kurulumu ile gelmeyen tüm yazılım paketlerinin kurulumu için tahsis edilen dizindir. 
+
+Proc, sanal dosya sistemidir. Kali linuxun sunduğu en güçlü özelliklerden biridir. 
+
+Buradaki dosyalar gerçek içerik taşımaz. Çalışma zamanında içerikler güncellenir, bağlanmış aygıtlar, donanım bilgisi, süreçlerin durumu gibi çekirdeğe ait bilgileri barındırır.
+
+Pek çok sistem programı bilgileri bu dizinden alır.
+
+
+	Root Dizini:
+
+Root her zaman çekirdeğin kurulu olduğu düzende yer alır. Sistem yöneticisinin ev dizinidir.  
+
+Kök dizininide tutulur. Root dizini içerisine çok fazla işlem yapılmaz. 
+
+
+	Usr Dizini:
+
+Sistemde en çok yer kaplayan dizin bu dizindir. Bu dizin kullanıcı için ikinci bir kök dizin olarak kabul edilebilir. 
+
+Sisteme sonradan kurulan uygulamalar usr dizinini kök dizin kabul eder. 
+
+Bütün her şeyin bir kopyası ve yapılandırma dosyaları bu dizinde bulunur. 
+
+
+	Sbin Dizini:
+
+Kullanıcının temel olarak çalıştırılabilen komutlar bin altındadır. İçerisinde tamamen linux kullanıcılarına özgü komutlar vardır. 
+
+Sistem yönetimine dahil olan uygulamalar Sbin dizini altında yer alır. 
+
+Sistem programları bu dizinde tutulur. Diğer uygulamalrdan temel farkı sistem yönetimine yönelik olmasıdır. 
+
+Bu uygulamaları çalıştırmak için kullanıcıların büyük bir kısmı yetkili değildir. Standart kullanıcılar erişemez. 3
+
+
+	Var Dizini:
+
+Sitemde gelen olarak bütün değişkenlerin tutulduğu, log dosyaları, gelen mailler, yazıcı kuyruğu, programın kilit dosyaları, uygulama hatalarının tutulduğu log dosyaları, backup dosyaları gibi bir çok dosyanın tutulduğu dizindir. 
+
+En çok log tarafı kullanılır. 
+
+
+	Log Dosyaları:
+
+Loglar bize her türlü bilgiyi verir. Sistem üzerinde oluşabilecek bütün hatalar burada tutulur. 
+
+Sistem hareketlerinin logları da burada tutulur. 
+
+Yanlış giden bir şeyler olduğunda ilgili uygulamayı içeren loglardan kontrol edilebilir. 

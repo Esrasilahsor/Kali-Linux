@@ -1,0 +1,15 @@
+			09 Sudo Komutu
+
+
+Normal kullanıcıda yapmak istediğimiz işlemler için root kullanıcıdan izin alan komuttur. 
+
+"vi /etc/sudoers" komutuyla sudo komutunun dosyasına gidebiliriz.
+
+Bir kullanıcıya sudo yetkisi vermek için "vi /etc/sudoers" komutuyla sudo dosyasının içine girdikten sonra # User privilege spesification seçeneğinin altına " kullanıcıadı ALL=(ALL:ALL) ALL" yazılarak kullanıcıya sudo yetkileri verilebilir.
+
+Eğer belirli bir uygulama için sudo yetkisi vermek istersek bulunduğu dosyayla birlikte yazmamız gerekir.  "kullanıcıadı ALL=(ALL:ALL) /usr/bin/systemctl" buna bir örnektir.
+
+Bir gruba sudo yetkisi vermek için "vi /etc/sudoers" komutuyla sudo dosyasının içine girdikten sonra # Allow members of group sudo to execute any command seçeneğinin altına " %kullanıcıadı ALL=(ALL:ALL) ALL" yazılarak kullanıcıya sudo yetkileri verilebilir.
+
+
+** Linux'teki tüm uygulamalar /usr/bin dosyası içinde tutulur. 

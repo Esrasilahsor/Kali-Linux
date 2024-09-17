@@ -1,0 +1,15 @@
+			11 Servis Yönetimi
+
+
+"systemctl status servisismi" komutu servisin durumunu gösterir. Servisin başında o işareti varsa servis çalışmıyor demektir. 
+
+Çalışmayan sistemi çalıştırmak için "systemctl start servisismi" komutu kullanılır.  
+
+
+Çalışan sistemi durdurmak için "systemctl stop servisismi" komutu kullanılır.
+
+Sistemi yeniden başlatmak için "systemctl resart servisismi" komutu kullanılır. 
+
+Bir servisi bilgisayar her başladığında çalıştırmak için " sudo system enable servisismi" komutu kulllanılır. 
+
+Bir servisi bilgisayar her başladığında çalıştımak istemiyorsak, kullanmak istediğimizde elle yazmak için " sudo system disable servisismi" komutu kulllanılır. 

@@ -1,0 +1,13 @@
+			15 Ardışık Komutlar 
+
+
+"|" Lİsteleme işlemini filtreler. Çalışan komutun çıktısını verir. 
+
+"| grep" filtreleme yapar. "| grep s" isminde "s" harfi bulunan fosyaları listeler. 
+
+	Birbirine Bağlı Komutlar:
+
+Birbilerine bağlı komutlar " && " ifadesi ile gösterilir. "&&" komutlar arasına konulur. Birinci komut hatalıysa ikinci komut da çalışmayacaktır.
+
+Birbirine bağlı olmayan komutları çalıştırmak için komutlar arasına tek  " & " işareti koyulur. Önceki komutun çalışıp çalışmaması ikinci komutu ilgilendirmez. 
+

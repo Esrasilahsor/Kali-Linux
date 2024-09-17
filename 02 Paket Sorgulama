@@ -1,0 +1,22 @@
+			02 Paket Sorgulama
+
+
+"sudo su" komutuyla root terminaline geçilir.
+
+"clear" komutu ekranı temizler. 
+
+"dpkg" komutu yüklü paketleri gösterir. Paketleri offline olarak kurmamızı sağlar.
+
+apt internetten(online) dosyayı indirip otomatik olarak kurar.
+
+** Kali linux'ün formatı .deb uzantılı olarak iner.
+
+** "dpkg -l" sistemde yüklü olan tüm paketleri ve açıklamalarını listeler.
+
+"dpkg -l | grep paketadı" komutu sadece o paketin var olup olmadığını ve açıklamasını gösterir. grep bir filtre olarak düşünülebilir.
+
+"apt search paketadı" paketin versiyon bilgisini ve nerede bulunduğunu gösterir.
+
+"apt show paketadı" paket hakkında daha detaylu bilgi verir.
+
+"apt-cache depends paketadı" paketin bağlı olduğu paketleri gösterir. Paketin çalışması için gerekli olan kaynakları gösterir. Bu aynı zamnada çalışmayan uygulamada hatanın ne olduğunu tespit etmekte kullanılabilir.

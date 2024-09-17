@@ -1,0 +1,15 @@
+			05 Kaynak Kodundan Paket Kurma ve Kaldırma
+
+
+Önce tarayıcıdan dosya indirilir. Sonra "cd İndirilenKlasörünAdi" komutuyla klasörün içine girilir. 
+
+Zip dosyası şeklinde inmişse dosyayı açmak için "bzip2 -d paket uzantısı" komutuyla sıkıştırılmış dosya klasöre dönüştürülür. 
+
+Sonra "cd KlasörAdı" komutunu kullanarak dosyanıniçine girilir. "sudo ./configure" komutu dosyayı kabukta çalıştırır.
+
+Daha sonra "sudo make" komutu ile kütüphaneler derlenmeye başlanır.  
+
+En son "sudo make install" komutuyla istenilen paket kurulur. 
+
+
+** "sudo make uninstall" komutuyla yüklenen dosya silinir.

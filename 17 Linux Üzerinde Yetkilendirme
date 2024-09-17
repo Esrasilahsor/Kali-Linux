@@ -1,0 +1,34 @@
+			17 Linux Üzerinde Yetkilendirme
+
+
+Her yetkinin bir numarası, ifadesi vardır. Ezbere dayalı bir uygulamadır.
+
+"ls -l" komutunu kullandığımızda çıkan listenin balarındaki 10 haneli ifade yetkilelerle alakalı kısımdır. 
+
+"drwxr-xr-x " ifadesi "d rwx r-x r-x " şeklinde ayrılır.
+
+"d" dizin olduğunu ifade eder.
+
+"rwx" kullanıcı yetkilerini ifade eder. Dosya sahibine ait bilgilerdir. 
+
+"r-x" dosya sahibinin ait olduğu gruba ait yetkilerdir. 
+
+"r-x" son kısmı da bütün kullanıcılara ait yetkileridir. 
+
+
+x = 1 Çalıştırma yetkisi
+
+w = 2 Yazma yetkisi
+
+r = 4 Okuma yetkisi
+
+"-rw-r--r-- " ifadesine "-" bunun bir dosya olduğunu ifade eder. 
+
+
+"chmod 777 dosya.txt" ifadesinde her 7 üçlük grubu ifade eder. Eğer tüm yetkiler varsa "rwx" 4+2+1 den 7 yazılır. Burada tüm kullanıcılara tam yetki verilmiştir. 
+
+Eğer "r-x" ifadesi varsa 4+0+1= 5 şeklinde ifade edilir.
+
+"d --- --- ---" ifadesi "chmod 000 " şeklinde de gösterilebilir. Hiçbir yetkimiz olmadığını gösterir. 
+
+

@@ -1,0 +1,10 @@
+			24 Bash Komutlarının Derlenmesi
+
+
+Kabukla iletişim kurulan yerdir. Programlama dili gibi düşünülebilir. 
+
+"sh" uzantısıdır. 
+
+"vi Dosyaadı.sh" komutu ile dosyaya girdikten sonra insert modda en üst satıra " #!/bin/bash" komutu yazılır. 
+
+Dosyanın yetki ayarları kontrol edilmelidir.

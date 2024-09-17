@@ -1,0 +1,33 @@
+			04 Paket Silme ve Güncelleme
+
+
+Kalide paket silme iki şekilde yapılabilir.
+
+
+1- "sudo apt remove paketadı" komutuyla:
+
+
+"sudo apk pruge paketadı" komutu, paketin yeniden yüklemek için gerekli olan dosyaları da tamamen kaldırırır. 
+
+
+2- " sudo dpkg -r paketadı.deb" komutuyla:
+
+
+"sudo dpkg -r paketadı-common" komutu paketin dosyalarını veritabanından siler.
+
+
+	Paket güncelleme:
+
+
+1- apt update: Paket kurmadan önce her zaman bu komut çalıştırılır. 
+
+Bu komut, paket yöneticisinin kullandığı paket listelerini günceller. Yani, depolarda bulunan en son paket sürümlerini ve bağımlılıklarını kontrol eder, ancak bu paketleri indirmez veya kurmaz
+
+2- apt upgrade: Programları üst veriyona taşıyan bir komuttur.
+
+Bu komut ise, update komutuyla güncellenen paket listelerine göre sistemdeki mevcut paketleri günceller. Yani, sisteminizde yüklü olan paketlerin yeni sürümlerini indirir ve kurar.
+
+3- apt --only-upgarde install paketadı: Sadece ilgili paket güncellenir.
+
+4- apt list -upgradable: Güncelenecek paketleri gösterir. 
+

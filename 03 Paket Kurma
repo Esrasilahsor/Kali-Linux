@@ -1,0 +1,27 @@
+			03 Paket Kurma
+
+
+Kalide paket kurma iki şekilde yapılabilir.
+
+	1- "apt install paketadı" komutuyla:
+
+
+Paketi standart kullanıcıyı kullanarak kurmalıyız çünkü root kullanıcı kullanarak kurarsak paketi her çalıştırdığımızda bizden root kullanıcı bilgileri ister.
+
+"sudo apt install paketadı" komutu root kullanaıcıdan izin isteyerek paketi standart kullanıcıda kurar.
+
+"sudo su" komutu kullanırsak root yetkileriyle indirmiş oluruz.
+
+Root kullanıcıdan çıkmak için "exit" komutu kullanlır.
+
+"wget" komut satırında kullanılan web tarayıcısıdır.
+
+
+	2- "dpkg -i paketadı.deb" komutuyla:
+
+
+Google'a girip indirmek istediğimiz paketi .deb uzantısı ile indiriyoruz.
+
+"sudo dpkg -i paketadı" ile paketin kurulumunu tamamlıyoruz. Paketin adı indirdiğimiz dosyanın ismi.
+
+** "pwd" komutu hangi dosyada olduğumuzu gösterir.

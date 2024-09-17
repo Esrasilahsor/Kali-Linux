@@ -1,0 +1,38 @@
+			16 Run Level
+
+Linux'ün çalıştığ farklı durumlara run level adı verilir. 
+
+Run Level linux sisteminin nasıl başlatılıdğını kontrol eder. 
+
+"rc0", sistemi güvenli bir şekilde kapana run leveldir. 
+
+"rc1", tek kullanıcı modunu destekler. Sistem bakımı yapmak için tercih edilir. Root kullanıcı ile giriş yapılır. Sadece temel servisler çalışır. Default modda yapar. 
+
+"rc2", grafik arayüzü olmadan çok kullanıcılı girişi sağlar. Çoğu Linux için varsayılan run level olarak geçer. Ağ hizmetleri, dosya sunucuları, yazdırma hizmetleri gibi tüm süreçler çalışır. 
+
+Sadece grafik arayüzü yoktur. Kullanıcılar bu run levelde çoğunlukla komut arayüzü kullanrarak işletim sistemini yönetirler. 
+
+Avantaj olarak yüksek performans sağlar. Dezavantaj olarak grafik arayüzü kullanılmaz.
+
+Her şeyi kullanabiliriz, tüm arayüzler aktiftir. 
+
+
+"rc3", bu dizinde ağ hizmetlerine ihtiyaç duyan kullanıcılar için tasarlanmıştır. Bu run levelde ağ hizmetleri,yazdırma işlemleri, dosya sunucuları gibi tüm hizmetler çalışır, aynı zamanda ağ bağlantısı da aktiftir.
+
+Bu run level sunucular için idealdir. 
+
+"rc4", gelecekte kullanılmak üzere saklıdır, henüz kullanılmamıştır.  
+
+"rc5" grafik arayüzü ile çoklu kullanıcı modudur. Graphical.target olarak da geçer. Şu anda kullandığımız run leveldir. Standart kullanıcılar giriş yapabilir. 
+
+Bu run levelde tüm hizmetler çalışır ve grafik arayüzü kullanılabilir. 
+
+"rc6" reboot diye adlandırılır. Sistemi yeniden başlatmak için kullanılır. Bu run levelde tüm hizmetler durdurulur, yeniden başlatma için gerekli işlemler yapılır ve sistemi yeniden başlatır.  
+
+"rcs" önemli konulardan bir tanesidir. Sistemde aciliyet gerektiren, çok kritik durumlar varsa sadece bu cihazın açılması sağlanarak içerisinde bakım ve onarım işlemleri yapılır. Sistem düzgün bağlamadığında kullanılır. 
+
+** "systemctl get-default" komutu hangi run levelde çalıştıüımızı gösterir.
+
+** "systemctl isoolate geçmekİstediğimizLevelİsmi" Run Leveller arası geçiş yapmamızı sağlar.
+
+** "systemctl isolate emergency.target" komutu kurtarma moduna girmemizi sağlar. 

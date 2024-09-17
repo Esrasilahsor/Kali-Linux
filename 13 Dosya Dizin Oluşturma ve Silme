@@ -1,0 +1,27 @@
+			13 Dosya Dizin Oluşturma ve Silme
+
+
+"more /klasöradı" komutu ile dosya okunabilir. 
+
+"cat /klasöradı" komutu ile dosya okunabilir. 
+
+"mkdir /home/kali/desktop/linüx" komutuyla yeni bir dizin oluşturulabilir. Buradaki dizin dosya isimleri temsilidir. Root kullanıcııda bu işlemler geçerlidir.
+
+Normal kullanıcıda "mkdir dizinadı" komutuyla yeni bir klasör(dizin) oluşturulabilir.
+
+"touch dosyadı.uzantısı " komutyla yeni bir dosya oluşturulabilir.
+
+Dosya isimi değiştirmek için "cp dosyadı yenidosyadı" komutu kullanılır.
+
+
+	Dosya Silme: 
+
+"rm -rf /* " komutuyla bütün root dosyası silinebilir. Riskli bir işlemdir ve sistem çalışmaz hala gelebilir. Çalıştırılmaması gereken bir komuttur. 
+
+Linux'te bir dosya silindiği zaman tamamen kaybolur. 
+
+"rm dosyadı" komutula dosya silinir.
+
+"rm -rf klasöradı" komutuyla klasör(dizin) silinebilir. 
+
+Başka dizindeki bir dosyayı silmek için " rm -rf /home/dosyaadı" komutu kullanılır. Burada home temsili klasördür.

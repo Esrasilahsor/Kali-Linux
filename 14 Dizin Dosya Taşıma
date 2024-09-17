@@ -1,0 +1,17 @@
+			14 Dizin Dosya Taşıma
+
+
+"mv" komutu bir dizini başka bir yere taşır.
+
+"mv /home/dizinadı/dosyadı /taşınacakDizinAdı" komutuyla taşıma işlemi yapılabilir. 
+
+"mv /taşınacakDosyaAdı /klasöradı/dosyanınYeniAdi " komutuyla dosya taşıma işlemi dosyanın ismi değiştirilerek yapılabilir. 
+
+
+"cp" komutu var olan dizini bir başka klasöre kopyalar.
+
+"cp -r /home/dizinadı/dosyadı /kopyalanacakDizinAdı" komutuyla dizin kopyalama işlemi yapılabilir. 
+
+"cp /home/dizinadı/dosyadı /kopyalanacakDizinAdı" komutuyla dosya kopyalama işlemi yapılabilir. 
+
+"cp -r /kopyalanacakDosyaAdı /klasöradı/dosyanınYeniAdi " komutuyla dosya kopyalama işlemi dosyanın ismi değiştirilerek yapılabilir. 

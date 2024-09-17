@@ -1,0 +1,41 @@
+			08 Temel Kullanıcı ve Grup Oluşturma
+
+
+"useradd -s /bin/bash -m -d /home/kullanıcıadı kullanıcıadı" komutuyla yeni bir kullanıcı eklenebilir.
+
+"cat /etc/group" komutuyla var olan kullanıcılar listelenir.
+
+"id kullanıcıadı" komutuyla kulanıcı hakkında kısa bilgi alınabilir.
+
+"cat /etc/shadow" kullanıcı hakkında bilgi verir.
+
+* Kullanıcıya şifre vermek için "passwd kullanıcıadı" komutu kullanlır.
+
+
+	Grup Oluşturma: 
+
+"groupadd grupadı" komutu ile bir grup oluşturulabilir.
+
+Oluşturulan grubu ve var olan grubu listelemek için "cat /etc/group" komutu kullanılır.
+
+
+	Gruba Kullanıcı Ekleme: 
+
+"usermod -G gruppadı kullanıcıadı" komutuyla var olan bir gruba var olan bie kullanıcı eklenebilir.
+
+
+	Gruptan Kullanıcı Çıkarma: 
+
+"gpasswd -d kullanıcıadı grupadı" komutuyla eklenen kullanıcı gruptan silinebilir.
+
+
+	Kullanıcı Kitleme: 
+
+"usermod -L kullanıcıadı" komutuyla mevcut kullanıcı kitlenebilir. 
+
+
+	Kullanıcı Silme:
+
+"userdel kullanıcıadı" komutuyla kullanıcı silinir fakat kullanıcının dısyaları bilgisayarda tutlmaya devam eder. 
+
+"userdel -r kullanıcıadı" komutuyla kullanıcı ve dosyaları bilgisayarınızdan tamamen silinir.

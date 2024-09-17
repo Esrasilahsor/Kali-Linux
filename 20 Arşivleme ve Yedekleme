@@ -1,0 +1,42 @@
+			20 Arşivleme ve Yedekleme
+
+
+"tar" arşivlerken 2 veya 3 farklı komutu vardır. 
+
+1- "tar -zcvf klasörİsmi.tar dosya1 dosya2" komutuyla 2 dosya aynı anda yedeklenebilir. 
+
+"c" arşiv yapmamızı sağlar. 
+
+"v" detayları gösterir.
+
+"f" filename yani dosyaya isim vermemizi sağlar. 
+
+"z" gzip ile sıkıştırma yapmasını sağlar.
+
+"j" bzip2 ile sıkıştırma yapar.
+
+"tar -jcvf klasörİsmi.tar.bz2 dosya1 dosya2" şeklinde yazılması gerekir. 
+
+** j ve z aynı anda verilemez. 
+
+	
+	Arşiv Dosyasını Dışarı Aktarma:
+
+Yedeklenen dosyaları dışarı çıkarmak için "tar -xvf klasörİsmi.tar dosya1 dosya2" şeklinde yazılması gerekir.
+
+* bzip2 komutunun çok büyük dosyalarda kullanılması önerilir. 
+
+
+		Dosya Dizin Sıkıştırma:
+
+"gzip dosyaAdı.uzantısı(txt vs).gz " komutuyla dosyalar sıkştırılır. 
+
+Geri açmak için "gunzip dosyaAdı.uzantısı.gz" komutu kullanılır. 
+
+Sıkıştırırken dosya ismini değiştirmek istersek "gzip -c eskiDosyaİsmi.uzantısı > yeniDosyaİsmi.uzantısı.gz" komutu kullanılır. 
+
+Bütün dosyaları sıkıştırmak için "gzip * " komutu kullanılır. 
+
+Bütün dosyaları açmak için "gunzip * " komutu kullanılır.
+
+Dosyaları açmak için "gzip -d dosya.txt.gz " komutu da kullanılabilir. bzip için de geçerlidir. 

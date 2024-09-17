@@ -1,0 +1,33 @@
+			21 Zamanlanmış Görev Oluşturma
+
+
+crontab dosyaları etc altında bulunur. 
+
+Görev planlamayı dakika(0-59), saat(0-23) veya güne göre yapabiliriz.
+
+Önce hani zamanda ne kadar aralıklarla çalışması gerektiğini belirlemeliyiz. 
+
+" * * * * * " ifadesi " dakika saat gün(ay) ay gün(hafta) " anlamına gelir. "*" ifadesi o paramerteyi geçersiz kılar. 
+
+" 30 17 * * 1 | ping -a google.com " Her ayın pazartesi günü saat 17.30'da Google'a ping at demektir. 
+
+
+		Otomatik Backup(Yedek) Alma:
+
+Önce yedek klasörü belirlemek gerekir. /var/backups dizini mevcuttur. Bunun altına yedekler adında yedek dosyası oluştururuz. 
+
+1 #!/bin/bash
+2
+3 zaman = 'date +%b-%d' 
+4
+5 arşiv = /var/backups/yedekler/yedek-&zaman.tar.gz
+6
+7 raporlar = /home/hacker/Desktop/raporlar*
+8
+9 tar -zcf &arsiv &raporlar
+
+Bu bir sh dosyasıdır. Adını yedekalmascript.sh koyduk. Bu scripti kaydedip çalıştırdığımızda yedek alır. Yedek alma scriptine root kullanıcı yetkisi verilir ve dosyanın yetkileri kontrol edilir.
+
+Zamanlama ayarlamak için "crontab -e" komutunu kullanırız. İnsert moda geçmek için i harfine basarız. En alt satırdaki komutun altna zamanlama ile ilgili bilgiler girilir. 
+
+" 30 5 * * 1 /bin/bash /yedekalmascript.sh" yazdığımızda zamanlama ayarı yapmış oluruz. Her hafta pazartesi günü 05.30 da yedek alır. esc'ye basıp editleme modundan çıktıktan sonra " x! " komutu ile çıkılır. x! kaydedip çıkar.  

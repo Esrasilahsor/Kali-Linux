@@ -1,0 +1,37 @@
+			07 Lokal Repo Kurulumları
+
+
+Uygulama kurma veya güncellemeyi kendi ortamımızda daha kontrollü bir şekilde yönetmek için Lokal bir Repository oluşturulur.
+
+Uygulama bu dosyanın içine atılır ve yapılmak istenen işlem bu dosya içerisnde gerçekleştirilir.  
+
+1- Lokal repo oluştrmak için var klasörüne "cd/var/" komutuyla gidilir. 
+
+"mkdir" komutu dizin oluşturma komutudur. 
+
+2- "sudo mkdir localrepo" komtuyla paketleri tutacak dizin oluşturulur. 
+
+3- Önce paket indirmemiz gerekir bu yüzden "sudo apt install paketadı -d --reinstall --allow-downgrades --allow-remove-essential --allow-change-held-packages" komutuyla paket istenen şekilde indirilir.
+
+* reinstall: Bu paketi indirdikten sonra yeniden yükleyebileceğimizi belirtir. Bununla alakalı konfigürasyonları da indirir.
+
+* allow-downgrades: Uygulamanın versiyon bilgisinin düşürmeye olanak tanır.
+
+* allow-remove-essential: Uygulamada ek özellikler varsa bunları kaldırmak yetkisini verir.
+
+* allow-change-held-packages: Uygulama üzerindeki heldlerin değiştirilmesi ile ilgili yetkileri tanımlar.
+
+
+4- İndirilen dosyaları Lokal repo dosyasına atmak için "sudo cp /var/cache/apt/archives/*.deb /var/localrepo/" komutu kullanılır.
+
+"*.deb" bütün deb uzantılı dosyaları seçmemizi sağlar.
+
+5- Packet zip dosyası oluşturmak. "dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz"
+
+Bu işlemi yapmak için Root kullanıcı olmamız lazım.
+
+6- vi /etc/apt/source.list.d/local.list oluşturulur. Sonrasında i ile Insert moda geçilir ve "deb {trusted=yes} file:///var/localrepo ./" komutu yazılır ve kaydedip çıkılır. 
+
+7- "vi /etc/apt/source.list" komutu yazılır, İnsert modda 2. satıra # işareti konulur. Bu, o satırın okunmamasını sağlar. 
+
+8- "apt install paketadı" ile paket Lokal Repomuzdan kurulur. 
